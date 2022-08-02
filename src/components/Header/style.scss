@@ -2,6 +2,67 @@
 @import 'src/styles';
 
 
-h1 {
-  color: vars.$primary-color;
+.header {
+  width: 60%;
+  height: 10%;
+  border: 1px solid vars.$primary-color;
+  box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.5);
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  // padding: .5rem 0;
+  &__title{
+    color: vars.$primary-color;
+    font-size: 1.8em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  &__search {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    & input {
+      &::placeholder {
+        color: vars.$primary-color;
+      }
+    }
+  }
+  &__annonce{
+    background-color: vars.$primary-color;
+    color: white;
+    padding: .5em;
+
+    & span {
+      border: 1px solid white;
+      padding: 0.2em;
+      font-size: 1.2rem;
+    }
+  }
+  &__input{}
+  &__icons{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    &__items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: .2rem;
+      &__span {
+        font-size: 1.2em !important;
+      }
+      &--item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5em;
+      }
+      &:hover {
+        color: vars.$secondary-color;
+      }
+    }
+
+  }
 }
