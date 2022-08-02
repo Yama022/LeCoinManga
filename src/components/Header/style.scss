@@ -1,0 +1,7 @@
+@use 'src/styles/vars';
+@import 'src/styles';
+
+
+h1 {
+  color: vars.$primary-color;
+}

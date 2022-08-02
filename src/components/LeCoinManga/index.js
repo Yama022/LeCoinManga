@@ -1,12 +1,14 @@
 // == Import
+
+import Header from 'src/components/Header';
 import './styles.scss';
 
 // == Composant
-const App = () => (
-  <div className="app">
-    <h1>LeCoinManga</h1>
+const LeCoinManga = () => (
+  <div className="lecoinmanga">
+    <Header />
   </div>
 );
 
 // == Export
-export default App;
+export default LeCoinManga;
