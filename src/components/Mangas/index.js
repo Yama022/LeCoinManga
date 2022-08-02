@@ -1,9 +1,15 @@
 import React from 'react';
+import Manga from './manga';
 
 import './style.scss';
 
 export default function Mangas() {
   return (
-    <div className='mangas'>Mangas</div>
+    <div className='mangas'>
+      <Manga />
+      <Manga />
+      <Manga />
+      <Manga />
+    </div>
   );
 }
