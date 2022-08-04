@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 4em;
+  padding: .2rem 0;
   &__title{
     color: vars.$primary-color;
     font-size: 1.8em;
