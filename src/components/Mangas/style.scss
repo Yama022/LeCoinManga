@@ -3,15 +3,16 @@
 
 
 .mangas {
+  position: relative;
   width: 70%;
   height: 100%;
   margin: auto;
+  padding-bottom: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: absolute;
   top: 15%;
-  left: 15%;
+  left: 0;
 }
 
 

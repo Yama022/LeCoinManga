@@ -10,6 +10,8 @@ export default function Mangas() {
       <Manga />
       <Manga />
       <Manga />
+      <Manga />
+      <Manga />
     </div>
   );
 }
