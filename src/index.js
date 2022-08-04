@@ -1,7 +1,6 @@
 // == Import : npm
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import ReactDOM from 'react-dom';
 // == Import : local
 // Composants
 import LeCoinManga from 'src/components/LeCoinManga';
@@ -17,10 +16,3 @@ const rootReactElement =
 const target = document.getElementById('root');
 // 3. Déclenchement du rendu de React (virtuel) => DOM (page web)
 render(rootReactElement, target);
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <LeCoinManga />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
