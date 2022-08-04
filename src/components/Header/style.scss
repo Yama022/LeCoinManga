@@ -4,10 +4,12 @@
 
 .header {
   width: 60%;
-  height: 10%;
+  height: 7%;
+  z-index: 1;
+  position: sticky;
   border: 1px solid vars.$primary-color;
   box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.5);
-  margin: auto;
+  margin-left: 20%;
   display: flex;
   justify-content: space-around;
   margin-bottom: 4em;
@@ -32,9 +34,13 @@
     }
   }
   &__annonce{
-    background-color: vars.$primary-color;
-    color: white;
-    padding: .5em;
+    display: flex;
+    align-items: center;
+    &__button {
+      background-color: vars.$primary-color;
+      color: white;
+      padding: .7em;
+    }
 
     & span {
       border: 1px solid white;
@@ -42,11 +48,11 @@
       font-size: 1.2rem;
     }
   }
-  &__input{}
   &__icons{
     width: 25%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     &__items {
       display: flex;
       flex-direction: column;
@@ -66,17 +72,19 @@
         color: vars.$secondary-color;
       }
     }
-
+    
   }
+  
 }
 
 
 .annonce{
   width: 70%;
-  height: 100%;
-  padding: 1.5rem 1.5rem 3rem 1.5rem;
-  margin: auto;
-  margin-bottom: 3rem;
+  height: auto;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  position: absolute;
+  top: 15%;
+  left: 15%;
   background-color: vars.$primary-color;
   border: 1px solid vars.$tertiary-color;
   text-align: left;
@@ -114,8 +122,8 @@
         font-size: 1.2em;
         color: white;
         position: absolute;
-        top: 78%;
-        left: 37.5%;
+        top: 49.5%;
+        left: 32.5%;
       }
       & button {
         font-size: 1.2em;

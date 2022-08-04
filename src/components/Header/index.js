@@ -7,18 +7,21 @@ import './style.scss';
 export default function Header() {
   return (
     <div className='header'>
+      <div className='header__title'>
       <Link
         to='/'
       >
-        <h1 className='header__title'>LeCoinManga</h1>
+        <h1>LeCoinManga</h1>
       </Link>
+      </div>
 
+      <div className='header__annonce'>
       <NavLink
         to='/annonce'
       >
-        <button className='header__annonce'><span>+</span> Déposer une annonce</button>
+        <button className='header__annonce__button'><span>+</span> Déposer une annonce</button>
       </NavLink>
-
+      </div>
 
       <div className='header__search'>
         <BiSearch className='header__search--item' />
