@@ -38,6 +38,7 @@ export default function Manga() {
           <div className="manga__item__content__age">
             <p>Âge conseillé : 12 ans et +</p>
           </div>
+
         </div>
 
       </div>
