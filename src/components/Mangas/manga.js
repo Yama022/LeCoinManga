@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
 
 import jujutsu from 'src/assets/images/jujutsu_kaisen_01.jpg';
 
@@ -7,6 +8,9 @@ import './style.scss';
 export default function Manga() {
   return (
     <div className='manga'>
+      <NavLink
+        to='/manga'
+      >
 
       <div className='manga__item'>
 
@@ -42,6 +46,7 @@ export default function Manga() {
         </div>
 
       </div>
+      </NavLink>
     </div>
   );
 }
