@@ -28,7 +28,7 @@
         margin: -2px; /* !important */
         border-radius: inherit; /* !important */
         @include gradient-background
-  }
+    }
 }
 
 @mixin gradient-text {

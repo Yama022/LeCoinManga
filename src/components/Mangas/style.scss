@@ -5,26 +5,24 @@
 
 .mangas {
   position: relative;
-  width: 70%;
-  height: 100%;
-  margin: auto;
-  padding-bottom: 4rem;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 
-.manga {
+.manga {    
   width: 40%;
   margin: .6rem;
   border-radius: 10px;
-  border: 2px solid vars.$tertiary-color;
   transition: ease-in-out transform .25s;
+  border: 2px solid vars.$tertiary-color; 
   &__item {
-    border-radius: 8px;
+    height: 100%;
+    border-radius: 10px;
     overflow: hidden;
-    box-sizing: border-box;
     color: vars.$light-color;
     background-color: vars.$secondary-color;
     display: flex;
