@@ -24,5 +24,58 @@
     "desc":"Nous sommes à l'ère des pirates. Lufy, un garçon espiègle, rêve de devenir le roi des pirates en trouvant le `One Piece`, un fabuleux trésor. Par mégarde, Lufy a avalé un jour un fruit démoniaque qui l'a transformé en homme caoutchouc. Depuis, il est capable de contorsionner son corps élastique dans tous les sens, mais il a perdu la faculté de nager.Avec l'aide de ses précieux amis, dont le fidèle Shanks, il va devoir affronter de redoutables pirates dans des aventures toujours plus rocambolesques.",
     "image":"images/one_piece_tome01.jpg",
     "japon": "images/japon.png"
+  },
+  {
+    "id":"3",
+    "name":"One Piece",
+    "tome": "Tome 2 : Luffy versus la bande à Baggy !!",
+    "origin":"Japon",
+    "author":"Eiichiro Oda",
+    "type":"Shonen",
+    "price":"6,90€",
+    "age":"Dès 10 ans",
+    "desc":"Luffy fait la connaissance de Nami, une ravissante jeune fille maîtrisant la navigation. Seulement, Nami déteste les pirates et refuse d’entrer dans son équipage. Pire, elle fait prisonnier Luffy, pour le livrer au terrible… Baggy le clown !",
+    "image":"images/one_piece_tome02.jpg",
+    "japon": "images/japon.png"
+  },
+  {
+    "id":"4",
+    "name":"One Piece",
+    "tome": "Tome 03: Une vérité qui blesse",
+    "origin":"Japon",
+    "author":"Eiichiro Oda",
+    "type":"Shonen",
+    "price":"6,90€",
+    "age":"Dès 10 ans",
+    "desc":"Tout comme Luffy, Baggy le clown a mangé un fruit du démon. Le pirate peut ainsi séparer son corps en plusieurs morceaux et éviter la plupart des attaques qui le visent. Mais, lorsqu’il plante ses lames dans le chapeau de Luffy, Baggy ignore la colère dont il va être la source…",
+    "image":"images/one_piece_tome03.jpg",
+    "japon": "images/japon.png"
+  },
+  {
+    "id":"5",
+    "name":"One Piece",
+    "tome": "Tome 04: Attaque au clair de lune",
+    "origin":"Japon",
+    "author":"Eiichiro Oda",
+    "type":"Shonen",
+    "price":"6,90€",
+    "age":"Dès 10 ans",
+    "desc":"Des pirates projettent d’attaquer le paisible village d’Usopp ! Ni une, ni deux, Luffy et ses amis décident de piéger la plage et d’attendre ces derniers de pied ferme. Mais le temps passe et les pirates ne se montrent toujours pas, quand soudain… ils distinguent des cris provenant d’une direction opposée ?!",
+    "image":"images/one_piece_tome04.jpg",
+    "japon": "images/japon.png"
+  },
+  {
+    "id":"6",
+    "name":"One Piece",
+    "tome": "Tome 05: Pour qui sonne le glas",
+    "origin":"Japon",
+    "author":"Eiichiro Oda",
+    "type":"Shonen",
+    "price":"6,90€",
+    "age":"Dès 10 ans",
+    "desc":"Voici enfin venu le face à face entre Luffy et le cruel Klahadoll ! Quelle issue va connaître ce combat acharné entre les deux adversaires ?! Pendant ce temps, Usopp et Zoro volent à la rescousse de Kaya et des enfants poursuivis par un drôle de personnage…",
+    "image":"images/one_piece_tome05.jpg",
+    "japon": "images/japon.png"
   }
+  
 ]
