@@ -8,6 +8,7 @@ import Panier from 'src/components/Header/panier'
 import Mangas from 'src/components/Mangas'
 import Description from 'src/components/Mangas/description'
 import Footer from 'src/components/Footer'
+
 import './styles.scss'
 
 // == Composant

@@ -1,15 +1,16 @@
 import { NavLink } from 'react-router-dom'
+import Description from './description'
 
 import './style.scss'
 
 export default function Manga({
-  id, image, name, origine, author, type, price, age,
+  id, image, name, origin, author, type, price, age, japon
 }) {
   return (
     <div className="manga">
 
       <NavLink
-        to={`/manga/${id}`}
+        to={`/manga/${id}`} 
       >
 
         <div className="manga__item" key={id}>
@@ -27,7 +28,7 @@ export default function Manga({
             </div>
 
             <div className="manga__item__content__origine">
-              <p>Origine : {origine}</p>
+              <p>Origine : <img src={`../${japon}`} alt={origin} /> {origin}</p>
             </div>
 
             <div className="manga__item__content__author">

@@ -44,7 +44,16 @@
       align-items: flex-start;
       padding-left: 4rem;
       &__title{}
-      &__origine{}
+      &__origine{
+        & p {
+          text-align: left;
+          & img {
+          width: 7%;
+          margin-right: .5em;
+          }
+
+        }
+      }
       &__author{}
       &__type{}
       &__price{}
@@ -62,6 +71,7 @@
 .description {
   width: 80%;
   margin: auto;
+  color: white;
   &__item {
     display: flex;
     flex-wrap: wrap;
