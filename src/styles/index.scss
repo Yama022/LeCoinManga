@@ -1,14 +1,35 @@
 @use 'reset';
 @use 'vars';
+@use 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
 html {
   height: 100%;
+  /* width */
+  ::-webkit-scrollbar {
+  width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: vars.$primary-color;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: vars.$tertiary-color;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @include mixins.gradient-background
+  }
 }
 
 body {
   font-family: sans-serif;
-  color: vars.$primary-color;
-  background-color: vars.$tertiary-color;
+  background-color: vars.$primary-color;
   min-height: 100%;
   width: 100%;
 }
