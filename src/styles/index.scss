@@ -23,8 +23,9 @@ html {
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    @include mixins.gradient-background
+    @include mixins.gradient-scrollbar
   }
+  overflow-y: scroll;
 }
 
 body {

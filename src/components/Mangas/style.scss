@@ -20,6 +20,7 @@
   margin: .6rem;
   border-radius: 10px;
   border: 2px solid vars.$tertiary-color;
+  transition: ease-in-out transform .25s;
   &__item {
     border-radius: 8px;
     overflow: hidden;
@@ -53,6 +54,7 @@
   &:hover {
     @include m.gradient-border;
     cursor: pointer;
+    transform: scale(1.015);
   }
 }
 

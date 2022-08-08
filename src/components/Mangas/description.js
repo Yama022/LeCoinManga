@@ -1,5 +1,5 @@
-import jujutsu from 'src/assets/images/jujutsu_kaisen_01.jpg'
-import japon from 'src/assets/images/japon.png'
+import jujutsu from '../../../public/images/jujutsu_kaisen_01.jpg'
+import japon from '../../../public/images/japon.png'
 
 import './style.scss'
 
@@ -19,7 +19,7 @@ export default function Description() {
           </div>
 
           <div className="description__item__content__origine">
-            <p>Originie : <img src={japon} />Japon - 2018</p>
+            <p>Originie : <img src={japon} alt="yes" />Japon - 2018</p>
           </div>
 
           <div className="description__item__content__author">

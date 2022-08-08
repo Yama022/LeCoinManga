@@ -15,7 +15,7 @@
   justify-content: space-around;
   margin-bottom: 4em;
   background-color: vars.$secondary-color;
-  padding: .2rem 0;
+  padding: 0.5rem 0;
   &__title{
     font-family: 'Yusei Magic', sans-serif;
     color: vars.$light-color;
@@ -76,7 +76,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: .2rem;
+      position: relative;
       &__span {
         font-size: 1.2em !important;
       }
@@ -88,8 +88,18 @@
         font-size: 1.5em;
         @include m.gradient-text;
       }
-      &:hover {
-        @include m.gradient-text;
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: -9px;
+      }
+      &:hover, &--active {
+        color: vars.$accent-color;
+        &::after {
+          content: '';
+          border-bottom: 3px solid vars.$accent-color;
+          width: 125%;
+        }
       }
     }
     

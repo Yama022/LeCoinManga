@@ -7,6 +7,13 @@
     background: linear-gradient(90deg, rgba(47,0,98,1), v.$accent-color 80%);
 }
 
+@mixin gradient-scrollbar {
+    background: rgb(47,0,98);
+    background: -moz-linear-gradient(135deg, rgba(47,0,98,1), v.$accent-color 120%);
+    background: -webkit-linear-gradient(135deg, rgba(47,0,98,1), v.$accent-color 120%);
+    background: linear-gradient(135deg, rgba(47,0,98,1), v.$accent-color 120%);
+}
+
 @mixin gradient-border {
     background: v.$primary-color;
     background-clip: padding-box; /* !important */

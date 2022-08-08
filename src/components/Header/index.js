@@ -36,6 +36,7 @@ export default function Header() {
         <div className="header__icons__items">
           <NavLink
             to="/favoris"
+            activeClassName="header__icons__items header__icons__items--active"
           >
             <MdFavoriteBorder className="header__icons__items--item" />
             <span className="header__icons__items__span">Favoris</span>
@@ -45,6 +46,7 @@ export default function Header() {
         <div className="header__icons__items">
           <NavLink
             to="/profil"
+            activeClassName="header__icons__items header__icons__items--active"
           >
             <BiUserCircle className="header__icons__items--item" />
             <span className="header__icons__items__span">Profil</span>
@@ -54,6 +56,7 @@ export default function Header() {
         <div className="header__icons__items">
           <NavLink
             to="/panier"
+            activeClassName="header__icons__items header__icons__items--active"
           >
             <BiBasket className="header__icons__items--item" />
             <span className="header__icons__items__span">Panier</span>

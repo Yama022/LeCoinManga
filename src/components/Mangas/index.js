@@ -1,3 +1,4 @@
+import data from 'src/data/data'
 import Manga from './manga'
 
 import './style.scss'
@@ -5,7 +6,7 @@ import './style.scss'
 export default function Mangas() {
   return (
     <div className="mangas">
-      <Manga />
+      {data.map((manga) => <Manga {...manga} key={manga.id} />)}
     </div>
   )
 }
