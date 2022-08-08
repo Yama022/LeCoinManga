@@ -1,11 +1,13 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import data from 'src/data/data.json';
 
 import jujutsu from 'src/assets/images/jujutsu_kaisen_01.jpg';
 
 import './style.scss';
 
 export default function Manga() {
+  console.log(data);
   return (
     <div className='manga'>
       <NavLink
