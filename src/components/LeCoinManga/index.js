@@ -4,6 +4,7 @@ import Header from 'src/components/Header';
 import Annonce from 'src/components/Header/annonce';
 import Favoris from 'src/components/Header/favoris';
 import Profil from 'src/components/Header/profil';
+import Panier from 'src/components/Header/panier';
 import Mangas from 'src/components/Mangas';
 import Description from 'src/components/Mangas/description';
 import Footer from 'src/components/Footer';
@@ -37,6 +38,12 @@ export default function LeCoinManga() {
         <Route path="/profil">
           <Header />
           <Profil />
+          <Footer />
+        </Route>
+
+        <Route path="/panier">
+          <Header />
+          <Panier />
           <Footer />
         </Route>
 

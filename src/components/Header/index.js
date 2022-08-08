@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { BiUserCircle, BiSearch } from 'react-icons/bi';
+import { BiUserCircle, BiSearch, BiBasket } from 'react-icons/bi';
 import { MdFavoriteBorder } from 'react-icons/md';
 import './style.scss';
 
@@ -49,6 +49,15 @@ export default function Header() {
           >
           <BiUserCircle className='header__icons__items--item' />
           <span className='header__icons__items__span'>Profil</span>
+          </NavLink>
+        </div>
+
+        <div className='header__icons__items'>
+          <NavLink
+            to='/panier'
+          >
+          <BiBasket className='header__icons__items--item' />
+          <span className='header__icons__items__span'>Panier</span>
           </NavLink>
         </div>
       </div>
