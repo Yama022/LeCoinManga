@@ -2,6 +2,8 @@
 @use 'src/styles/mixins' as m;
 @import 'src/styles';
 
+@import url('https://css.gg/css');
+
 
 .mangas {
   position: relative;
@@ -19,13 +21,18 @@
   border-radius: 10px;
   transition: ease-in-out transform .25s;
   border: 2px solid vars.$tertiary-color; 
+
   &__item {
+    position: relative;
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
     color: vars.$light-color;
     background-color: vars.$secondary-color;
     display: flex;
+
+    
+
     &__image{
       width: 30%;
       img {
@@ -41,6 +48,28 @@
       justify-content: space-around;
       align-items: flex-start;
       padding-left: 4rem;
+      &__heart {
+        & button {
+          position: absolute;
+          top: 5%;
+          right: -15%;
+          color: white;
+          font-size: 1.5em;
+          background-color: transparent;
+          border: none;
+          & img {
+            width: 15%;
+          }
+  
+          &:hover {
+            color: vars.$yellow-color;
+            & .heart {
+              fill: currentColor;
+              color: yellow;
+            }
+          }
+        }
+      }
       &__title{}
       &__origine{
         & p {
