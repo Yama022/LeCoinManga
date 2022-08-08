@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { BsHeart } from 'react-icons/bs'
+import { useState } from 'react'
 
 import emptyHeartbis from '/public/images/empty-bg.png'
 import yellowHeart from '/public/images/yellow-heart.png'
@@ -9,11 +10,26 @@ import './style.scss'
 export default function Manga({
   id, image, name, origin, author, type, price, age, japon
 })
-
 {
-  const addFavorite = (e) => {
-    console.log('addFavorite')
+  const [favorite, setFavorite] = useState(false)
+
+  const handleFavorite = (e) => {
     e.preventDefault()
+    setFavorite(!favorite)
+  }
+
+  const addFavorite = (e) => {
+    e.preventDefault()
+    const heart = document.querySelector('.heart')
+    heart.src = yellowHeart
+    setFavorite(true)
+  }
+
+  const removeFavorite = (e) => {
+    e.preventDefault()
+    const heart = document.querySelector('.heart')
+    heart.src = emptyHeartbis
+    setFavorite(false)
   }
   return (
     <div className="manga">
@@ -35,9 +51,17 @@ export default function Manga({
           <div className="manga__item__content">
 
             <div className="manga__item__content__heart">
+              <> {
+              (!favorite) ?
               <button onClick={addFavorite}>
-                <img src={emptyHeartbis} alt="" />
+                <img src={emptyHeartbis} alt="favortie" className='heart' />
+              </button> 
+              :
+              <button onClick={removeFavorite}>
+                <img src={emptyHeartbis} alt="favortie" className='heart' />
               </button>
+              } 
+              </>
             </div>
             <div className="manga__item__content__title">
               <h1>{name}</h1>
