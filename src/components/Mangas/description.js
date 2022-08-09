@@ -1,9 +1,11 @@
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import manga from 'src/data/data'
+import { BiBasket } from 'react-icons/bi'
 
 import greyHeart from '/public/images/grey_heart.png'
 import yellowHeart from '/public/images/yellow-heart.png'
+import shopping from '/public/images/shopping.png'
 
 import './style.scss'
 
@@ -49,21 +51,28 @@ export default function Description() {
           </div>
 
           <div className="description__item__content__heart">
-              <> {
-              (!favorite) ?
-              <button onClick={addFavorite}>
-                <img src={greyHeart} alt="favortie" className='heart' />
-              </button> 
-              :
-              <button onClick={removeFavorite}>
-                <img src={greyHeart} alt="favortie" className='heart' />
-              </button>
-              } 
-              </>
-            </div>
+            <> {
+            (!favorite) ?
+            <button onClick={addFavorite}>
+              <img src={greyHeart} alt="favortie" className='heart' />
+            </button> 
+            :
+            <button onClick={removeFavorite}>
+              <img src={greyHeart} alt="favortie" className='heart' />
+            </button>
+            } 
+            </>
+          </div>
+
+          <div className="description__item__content__sold">
+            <button className='description__item__content__sold__button'>
+              <img src={shopping} alt="shopping" className='shopping' />
+              <p>Ajout au panier</p>
+            </button>
+          </div>
 
           <div className="description__item__content__origine">
-            <p>Originie : <img src={`../${japon}`} alt={origin} /> {origin}</p>
+            <p>Origine : <img src={`../${japon}`} alt={origin} /> {origin}</p>
           </div>
 
           <div className="description__item__content__author">
