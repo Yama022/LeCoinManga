@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
-
+import data from '../../data/data.json'
 import greyHeart from '/public/images/grey_heart.png'
 import yellowHeart from '/public/images/yellow-heart.png'
 
@@ -11,11 +11,6 @@ export default function Manga({
 })
 {
   const [favorite, setFavorite] = useState(false)
-
-  // const handleFavorite = (e) => {
-  //   e.preventDefault()
-  //   setFavorite(!favorite)
-  // }
 
   const addFavorite = (e) => {
     e.preventDefault()

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { BiUserCircle, BiSearch, BiBasket } from 'react-icons/bi'
 import { MdFavoriteBorder } from 'react-icons/md'
@@ -5,9 +6,13 @@ import data from '../../data/data.json'
 import './style.scss'
 
 export default function Header() {
+  const [search, setSearch] = useState(data)
+
   const onSearch = (e) => {
     const value = e.target.value
     const check = data.filter(item => item.name.toLowerCase().includes(value))
+    setSearch(check)
+    return check
   }
   return (
     <div className="header">
@@ -35,6 +40,7 @@ export default function Header() {
           className="header__input"
           name="headerInput"
           onChange={onSearch}
+          onClick={() => setSearch(data)}
         />
       </div>
 
