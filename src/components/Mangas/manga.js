@@ -1,8 +1,7 @@
 import { NavLink } from 'react-router-dom'
-import { BsHeart } from 'react-icons/bs'
 import { useState } from 'react'
 
-import emptyHeartbis from '/public/images/empty-bg.png'
+import greyHeart from '/public/images/grey_heart.png'
 import yellowHeart from '/public/images/yellow-heart.png'
 
 import './style.scss'
@@ -28,7 +27,7 @@ export default function Manga({
   const removeFavorite = (e) => {
     e.preventDefault()
     const heart = document.querySelector('.heart')
-    heart.src = emptyHeartbis
+    heart.src = greyHeart
     setFavorite(false)
   }
   return (
@@ -54,11 +53,11 @@ export default function Manga({
               <> {
               (!favorite) ?
               <button onClick={addFavorite}>
-                <img src={emptyHeartbis} alt="favortie" className='heart' />
+                <img src={greyHeart} alt="favortie" className='heart' />
               </button> 
               :
               <button onClick={removeFavorite}>
-                <img src={emptyHeartbis} alt="favortie" className='heart' />
+                <img src={greyHeart} alt="favortie" className='heart' />
               </button>
               } 
               </>
