@@ -70,9 +70,8 @@ export default function Description() {
           </div>
 
           <div className="description__item__content__sold">
-            <button className='description__item__content__sold__button' onClick={addToShop}>
-              <img src={shopping} alt="shopping" className='shopping' />
-              <p>Ajout au panier</p>
+            <button className='description__item__content__sold__button ripple' onClick={addToShop}>
+              Ajouter au panier
             </button>
           </div>
 
