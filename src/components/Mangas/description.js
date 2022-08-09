@@ -27,6 +27,11 @@ export default function Description() {
     setFavorite(false)
   }
 
+  const addToShop = (e) => {
+    e.preventDefault()
+    console.log("add to shop");
+  }
+
   const { id } = useParams();
 
   const { image, name, origin, author, type, price, age, desc, japon } = manga.find(manga => manga.id === id);
@@ -65,7 +70,7 @@ export default function Description() {
           </div>
 
           <div className="description__item__content__sold">
-            <button className='description__item__content__sold__button'>
+            <button className='description__item__content__sold__button' onClick={addToShop}>
               <img src={shopping} alt="shopping" className='shopping' />
               <p>Ajout au panier</p>
             </button>
