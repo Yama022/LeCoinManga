@@ -59,11 +59,11 @@ export default function Description() {
             <> {
             (!favorite) ?
             <button onClick={addFavorite}>
-              <img src={greyHeart} alt="favortie" className='heart' />
+              <img src={greyHeart} alt="favorite" className='heart' />
             </button> 
             :
             <button onClick={removeFavorite}>
-              <img src={greyHeart} alt="favortie" className='heart' />
+              <img src={greyHeart} alt="favorite" className='heart' />
             </button>
             } 
             </>
