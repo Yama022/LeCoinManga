@@ -29,7 +29,7 @@ export default function LeCoinManga() {
         <Switch>
           <Route exact path="/" render={() => <Mangas data={filteredData} />} />
           <Route exact path="/annonce" component={Annonce} />
-          <Route exact path="/favoris" component={Favoris} />
+          <Route exact path="/favoris" render={() => <Favoris data={data} />} />
           <Route exact path="/profil" component={Profil} />
           <Route exact path="/panier" component={Panier} />
           <Route exact path="/manga/:id" component={Description} />

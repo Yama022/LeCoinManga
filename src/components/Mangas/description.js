@@ -1,11 +1,9 @@
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import manga from 'src/data/data'
-import { BiBasket } from 'react-icons/bi'
 
 import greyHeart from '/public/images/grey_heart.png'
 import yellowHeart from '/public/images/yellow-heart.png'
-import shopping from '/public/images/shopping.png'
 
 import './style.scss'
 
