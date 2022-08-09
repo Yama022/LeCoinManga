@@ -1,4 +1,5 @@
 // == Import
+import { useState } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Header from 'src/components/Header'
 import Annonce from 'src/components/Header/annonce'
@@ -9,16 +10,24 @@ import Mangas from 'src/components/Mangas'
 import Description from 'src/components/Mangas/description'
 import Footer from 'src/components/Footer'
 
+import data from '../../data/data.json'
+
 import './styles.scss'
 
 // == Composant
 export default function LeCoinManga() {
+  const [filteredData, setFilteredData] = useState(data)
+  const handleSearch = (e) => {
+    const { value } = e.target
+    const searchResult = data.filter((item) => item.name.toLowerCase().includes(value.toLowerCase()))
+    setFilteredData(searchResult)
+  }
   return (
     <div className="lecoinmanga">
       <BrowserRouter>
-        <Header />
+        <Header setFilteredData={setFilteredData} data={filteredData} onSearch={handleSearch} />
         <Switch>
-          <Route exact path="/" component={Mangas} />
+          <Route exact path="/" render={() => <Mangas data={filteredData} />} />
           <Route exact path="/annonce" component={Annonce} />
           <Route exact path="/favoris" component={Favoris} />
           <Route exact path="/profil" component={Profil} />
