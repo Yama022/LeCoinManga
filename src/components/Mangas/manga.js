@@ -7,15 +7,15 @@ import yellowHeart from '/public/images/yellow-heart.png'
 import './style.scss'
 
 export default function Manga({
-  id, image, name, origin, author, type, price, age, japon
+  id, image, name, tome, origin, author, type, price, age, japon
 })
 {
   const [favorite, setFavorite] = useState(false)
 
-  const handleFavorite = (e) => {
-    e.preventDefault()
-    setFavorite(!favorite)
-  }
+  // const handleFavorite = (e) => {
+  //   e.preventDefault()
+  //   setFavorite(!favorite)
+  // }
 
   const addFavorite = (e) => {
     e.preventDefault()
@@ -64,6 +64,7 @@ export default function Manga({
             </div>
             <div className="manga__item__content__title">
               <h1>{name}</h1>
+              <h2>{tome}</h2>
             </div>
 
             <div className="manga__item__content__origine">
