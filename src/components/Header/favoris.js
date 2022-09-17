@@ -3,13 +3,13 @@ import data from '../../data/data.json';
 import './style.scss';
 
 export default function Favoris(props) {
-  console.log(props);
+  const { data:mangas } = props;
   return (
     <div className='favoris'>
       <h1 className='favoris__title'>Retrouvez ici vos mangas favoris</h1>
 
       <div className='favoris__items'>
-      {data.map((manga, index) => (
+      {mangas.map((manga, index) => (
       <NavLink
         to={`/manga/${manga.id}`}
       >
@@ -30,3 +30,5 @@ export default function Favoris(props) {
     </div>
   );
 }
+
+
