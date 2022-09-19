@@ -3,14 +3,15 @@
   background-color: $secondary;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
-  padding: $gutter;
+  padding: calc($gutter / 2) calc($gutter * 2);
   border-radius: 0 0 20px 20px;
+  margin-bottom: calc($gutter * 2);
 
   // Title
   &__title {
-    font-size: $text-3;
+    font-size: $text-4;
   }
 
   // Search Bar
@@ -27,6 +28,7 @@
       border: none;
       background-color: transparent;
       color: $white;
+      flex: 2;
     }
 
     &__button {

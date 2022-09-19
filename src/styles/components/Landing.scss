@@ -1,0 +1,97 @@
+.Landing {
+  display: flex;
+  flex-direction: column;
+  gap: calc($gutter * 2);
+  width: 60%;
+  margin: 0 auto;
+
+  // Introduction
+  &__introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: linear-gradient(#00000099, $blue),
+      url(../../assets/landing_background.jpg) no-repeat center center/cover;
+    border-radius: 20px;
+    height: 40vh;
+    padding: $gutter;
+
+    &__title {
+      font-size: $text-3;
+      font-weight: $black;
+      width: 50%;
+    }
+
+    &__actions {
+      background-color: $white;
+      padding: $gutter;
+      border-radius: 20px;
+
+      &__choices {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__categories {
+    display: flex;
+    flex-direction: column;
+    gap: $gutter;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        border-radius: 20px;
+        border: 2px solid $white;
+        height: calc($gutter * 5);
+        max-width: calc($gutter * 5);
+        position: relative;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+
+            img {
+                transform: scale(1.1);
+                filter: brightness(1) blur(0);
+            }
+        }
+
+        &__link {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+
+          img {
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 18px;
+            filter: brightness(0.8) blur(2px);
+            transition: all 0.3s ease-in-out;
+          }
+
+          span {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: $blue;
+            font-size: $text-6;
+            background-color: #f8f8ff30;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

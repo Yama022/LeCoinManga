@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 
-import { BiSearchAlt, BiUser, BiCart } from 'react-icons/bi';
-import { GiStarsStack } from 'react-icons/gi';
+import { BiSearchAlt, BiCart } from 'react-icons/bi';
+import { GiStarsStack } from 'react-icons/gi';
+import { CgProfile } from 'react-icons/cg';
 
 export default function Header() {
 
@@ -9,7 +10,7 @@ export default function Header() {
         {
             name: 'Profil',
             link: '/profile',
-            icon: <BiUser />
+            icon: <CgProfile />
         },
         {
             name: 'Favoris',
