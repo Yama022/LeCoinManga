@@ -1,54 +1,15 @@
-@use 'reset';
-@use 'vars';
-@use 'mixins';
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
-html {
-  height: 100%;
-  /* width */
-  ::-webkit-scrollbar {
-  width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-  background: vars.$primary-color;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: vars.$tertiary-color;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    @include mixins.gradient-scrollbar
-  }
-  overflow-y: scroll;
-}
 
-body {
-  margin: 0;
-  font-family: 'Yusei Magic', sans-serif;
-  background-color: vars.$primary-color;
-  width: 100%;
-  color: vars.$light-color;
-}
+@charset 'utf-8';
 
-button {
-  font: inherit;
-}
+// Vendors
+@import "vendors/__vendors-dir";
 
-/* 
-  // or you can import your own font
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto-Regular.ttf');
-  }
+// Abstracts
+@import "abstracts/__abstracts-dir";
 
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-*/
+// Base Styles
+@import "base/__base-dir";
+
+// Components
+@import "components/__components-dir";
