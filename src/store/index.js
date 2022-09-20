@@ -1,4 +1,4 @@
-import { legacy_createStore as createStore, applyMiddleware, compose } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import reducer from '../reducers';
 
 // Import all middlewares

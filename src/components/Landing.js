@@ -1,11 +1,19 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import data from '../assets/data/categories.json'
 
-export default function Landing() {
+export default function Landing({
+    getAllTypes,
+    types,
+}) {
+    
+    useEffect(() => {
+        getAllTypes(data);
+    }, [getAllTypes]);
 
     // Hide NSFW categories from the landing page if the user is not logged in
-    const categories = data.categories.filter((category) => !category.is_nsfw)
+    const categories = types.filter((category) => !category.is_nsfw)
 
     return (
         <div className='Landing'>

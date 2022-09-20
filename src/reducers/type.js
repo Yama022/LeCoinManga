@@ -1,4 +1,4 @@
-import { GET_ALL_TYPES } from '../actions/type';
+import { SET_TYPES } from '../actions/type';
 
 export const initialState = {
     types: [],
@@ -6,7 +6,7 @@ export const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case GET_ALL_TYPES:
+        case SET_TYPES:
             return {
                 ...state,
                 types: action.payload

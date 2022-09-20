@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import Landing from './components/Landing';
+import Landing from './containers/Landing';
 
 function App() {
   return (
