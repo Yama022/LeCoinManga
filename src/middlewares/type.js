@@ -10,7 +10,6 @@ const type  = (store) => (next) => async (action) => {
     switch (action.type) {
         case GET_ALL_TYPES:
             const response = await api.get('/type');
-            console.log(response.data);
             dispatch(setTypes(response.data));
             break;
         default:

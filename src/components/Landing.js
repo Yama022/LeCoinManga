@@ -30,7 +30,7 @@ export default function Landing({
                 <ul className="Landing__categories__list">
                     {categories.slice(0, 8).map((category, index) => (
                         <li key={index} className="Landing__categories__list__item">
-                            <Link to={`/category/${category.name}`} className="Landing__categories__list__item__link">
+                            <Link to={`/category/${category.label}`} className="Landing__categories__list__item__link">
                                 <img src={require(`../assets/images/categories/${category.label}.png`)} alt={category.name} />
                                 <span>{category.name}</span>
                             </Link>

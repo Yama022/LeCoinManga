@@ -11,7 +11,7 @@
 
   // Title
   &__title {
-    font-size: $text-4;
+    font-size: $text-m;
   }
 
   // Search Bar
@@ -35,7 +35,7 @@
       background-color: transparent;
       border: none;
       color: $white;
-      font-size: $text-4;
+      font-size: $text-m;
       cursor: pointer;
     }
   }
@@ -51,6 +51,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          cursor: pointer;
 
           &:hover {
             color: $blue;
@@ -61,7 +62,7 @@
           }
 
           &__icon {
-            font-size: $text-4;
+            font-size: $text-m;
             color: $white;
           }
         }

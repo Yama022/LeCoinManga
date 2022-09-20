@@ -1,21 +1,23 @@
 $primary: #1b1b1b;
 $secondary: #222222;
-$blue: #0C3D91;
-$white: #F8F8FF;
+$blue: #0c3d91;
+$white: #f8f8ff;
 $yellow: #eeee26;
+$red: #ff2030;
+$debug: #ff00ff;
 
-$main-font: 'Mochiy Pop One', sans-serif;
+$main-font: "Mochiy Pop One", sans-serif;
 $black: 900;
 $bold: 700;
 
-$text-1: 64px;
-$text-2: 48px;
-$text-3: 36px;
-$text-4: 24px;
-$text-5: 18px;
-$text-6: 14px;
+$text-xxl: 64px;
+$text-xl: 48px;
+$text-l: 36px;
+$text-m: 24px;
+$text-s: 18px;
+$text-xs: 14px;
 
-$gutter : 1.5rem;
+$gutter: 1.5rem;
 
 $tablet-breakpoint: 1024px;
 $mobile-breakpoint: 480px;

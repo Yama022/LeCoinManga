@@ -1,0 +1,61 @@
+.Auth {
+    &__title {
+        font-size: $text-l;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: $gutter;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: calc($gutter / 2);
+            width: 30%;
+
+            &__label {
+                font-size: $text-xs;
+                font-weight: 600;
+            }
+
+            &__input {
+                border: none;
+                border-bottom: 5px solid $primary;
+                background-color: $secondary;
+                color: $white;
+                font-size: $text-s;
+                padding: calc($gutter / 2);
+                border-radius: 20px;
+                transition: all 0.3s ease-in-out;
+
+                &:focus {
+                    border-bottom: 5px solid $blue;
+                }
+            }
+
+            &__submit {
+                margin: $gutter auto;
+                width: 50%;
+            }
+        }
+
+        &__disclaimer {
+            font-size: $text-xs;
+
+            &__highlight {
+                color: $white;
+                text-decoration: underline;
+                cursor: pointer;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

@@ -17,7 +17,7 @@
     padding: $gutter;
 
     &__title {
-      font-size: $text-3;
+      font-size: $text-l;
       font-weight: $black;
       width: 50%;
     }
@@ -84,7 +84,7 @@
             left: 50%;
             transform: translateX(-50%);
             color: $blue;
-            font-size: $text-6;
+            font-size: $text-xs;
             background-color: #f8f8ff30;
             padding: 10px;
             border-radius: 10px;
