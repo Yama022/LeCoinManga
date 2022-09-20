@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import typeReducer from './typeReducer';
+import typeReducer from './type';
 
 const rootReducer = combineReducers({
   type: typeReducer

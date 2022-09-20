@@ -1,5 +1,5 @@
 import { legacy_createStore as createStore, applyMiddleware, compose } from 'redux';
-import reducer from 'src/reducer';
+import reducer from '../reducers';
 
 // Import all middlewares
 import typeMiddleware from '../middlewares/type';

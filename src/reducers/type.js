@@ -1,4 +1,4 @@
-import { GET_ALL_TYPES } from '../actions/types';
+import { GET_ALL_TYPES } from '../actions/type';
 
 export const initialState = {
     types: [],
