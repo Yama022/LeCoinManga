@@ -1,0 +1,23 @@
+.Profile {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  &__container {
+    width: 90%;
+    margin: auto;
+    &__username {
+      text-align: center;
+        font-size: 3.5rem;
+        font-weight: 600;
+        span {
+          font-size: 1.5rem;
+          font-weight: 400;
+          img {
+            width: 3.5rem;
+            height: 3.5rem;
+            margin-left: 0.5rem;
+          }
+        }
+    }
+  }
+}

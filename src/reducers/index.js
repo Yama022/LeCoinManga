@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 
-import typeReducer from "./type";
+import genreReducer from "./genre";
 import userReducer from "./user";
 
 const rootReducer = combineReducers({
-  type: typeReducer,
+  type: genreReducer,
   user: userReducer,
 });
 

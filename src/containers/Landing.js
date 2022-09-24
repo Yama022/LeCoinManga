@@ -1,14 +1,14 @@
 import { connect } from "react-redux";
 import Landing from "../components/Landing";
 
-import { getAllTypes } from "../actions/type";
+import { getAllGenres } from "../actions/genre";
 
 const mapStateToProps = (state) => ({
-  types: state.type.types,
+  genres: state.genre.genres,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  getAllTypes: (payload) => dispatch(getAllTypes(payload)),
+  getAllGenres: (payload) => dispatch(getAllGenres(payload)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Landing);

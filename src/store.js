@@ -2,7 +2,7 @@ import { legacy_createStore as createStore, applyMiddleware, compose } from 'red
 import reducer from './reducers';
 
 // Import all middlewares
-import typeMiddleware from './middlewares/type';
+import genreMiddleware from './middlewares/genre';
 import userMiddleware from './middlewares/user';
 
 // Redux Devtools
@@ -11,7 +11,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // Declare middlewares
 const enhancers = composeEnhancers(
     applyMiddleware(
-        typeMiddleware,
+        genreMiddleware,
         userMiddleware
     ),
 );

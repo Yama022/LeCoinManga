@@ -1,15 +1,15 @@
-import { SET_TYPES } from '../actions/type';
+import { SET_GENRES } from '../actions/genre';
 
 export const initialState = {
-    types: [],
+    genre: [],
 }
 
 const reducer = (state = initialState, action) => {
-    switch (action.type) {
-        case SET_TYPES:
+    switch (action.genre) {
+        case SET_GENRES:
             return {
                 ...state,
-                types: action.payload
+                genres: action.payload
             }
         default:
             return state;

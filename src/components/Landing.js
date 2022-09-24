@@ -1,10 +1,12 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import CategoriesSlider from "./CategoriesSlider";
 
 export default function Landing({ getAllTypes, types }) {
   useEffect(() => {
     getAllTypes();
   }, [getAllTypes]);
+
 
   // Hide NSFW categories from the landing page if the user is not logged in
   const categories = types.filter((category) => !category.is_nsfw);
@@ -15,7 +17,13 @@ export default function Landing({ getAllTypes, types }) {
         <h2 className="Landing__introduction__title">
           Acheter et Vendez vos mangas entre passionnés
         </h2>
-        <div className="Landing__introduction__post">Déposer une annonce</div>
+        <div className="Landing__introduction__post">
+          <button className="button">
+            <Link to='/form'>
+              Déposer une annonce
+            </Link>
+          </button>
+          </div>
       </div>
 
       <div className="Landing__categories">
