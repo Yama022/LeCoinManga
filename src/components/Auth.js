@@ -10,6 +10,7 @@ export default function Auth({
   loginPassword,
   isSuccessfullyRegistered,
   isSuccessfullyLoggedIn,
+  loginError,
 
   loginUser,
   registerUser,
@@ -34,7 +35,7 @@ export default function Auth({
       email: registerEmail,
       password: registerPassword,
       confirm: registerConfirmPassword,
-    })
+    });
   };
 
   const signIn = (e) => {
@@ -43,7 +44,7 @@ export default function Auth({
     loginUser({
       email: emailOrUsername,
       password: loginPassword,
-    })
+    });
   };
 
   return (
@@ -125,10 +126,12 @@ export default function Auth({
           <form className="Auth__container__form">
             {/** EMAIL */}
             <label className="Auth__container__form__label" htmlFor="username">
-              Email / Nom d'utilisateur
+              Adresse email
             </label>
             <input
-              className="Auth__container__form__input"
+              className={`Auth__container__form__input ${
+                loginError.isEmailInvalid && "errored"
+              }`}
               name="username"
               type="username"
               placeholder="Email"
@@ -140,13 +143,29 @@ export default function Auth({
               Mot de passe
             </label>
             <input
-              className="Auth__container__form__input"
+              className={`Auth__container__form__input ${
+                loginError.isPasswordInvalid && "errored"
+              }`}
               name="password"
               type="password"
               placeholder="Mot de passe"
               value={loginPassword}
               onChange={(e) => setLoginPassword(e.target.value)}
             />
+            {/** ERROR */}
+            <div className="Auth__container__form__error">
+              {loginError.isEmailInvalid && (
+                <p className="Auth__container__form__error__message">
+                  L'adresse email que vous avez entrée ne correspond à aucun
+                  compte.
+                </p>
+              )}
+              {loginError.isPasswordInvalid && (
+                <p className="Auth__container__form__error__message">
+                  Le mot de passe que vous avez entré n'est pas correct.
+                </p>
+              )}
+            </div>
             {/** SUBMIT */}
             <button
               className="button blue Auth__container__form__submit"

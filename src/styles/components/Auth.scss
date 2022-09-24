@@ -36,6 +36,16 @@
                 &:focus {
                     border-bottom: 5px solid $blue;
                 }
+
+                &.errored {
+                    border-bottom: 5px solid $red;
+                }
+            }
+
+            &__error {
+                color: $red;
+                font-size: $text-xs;
+                font-weight: 600;
             }
 
             &__submit {

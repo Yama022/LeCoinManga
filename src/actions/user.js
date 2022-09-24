@@ -10,6 +10,7 @@ export const SET_REGISTER_EMAIL = "SET_REGISTER_EMAIL";
 export const SET_EMAIL_OR_USERNAME = "SET_EMAIL_OR_USERNAME";
 export const SET_LOGIN_PASSWORD = "SET_LOGIN_PASSWORD";
 export const SET_REGISTER_IS_SUCCESS = "SET_REGISTER_IS_SUCCESS";
+export const SET_LOGIN_ERROR = "SET_LOGIN_ERROR";
 
 export const getUser = () => ({
   type: GET_USER,
@@ -65,5 +66,10 @@ export const setEmailOrUsername = (payload) => ({
 
 export const setLoginPassword = (payload) => ({
   type: SET_LOGIN_PASSWORD,
+  payload,
+});
+
+export const setLoginError = (payload) => ({
+  type: SET_LOGIN_ERROR,
   payload,
 });

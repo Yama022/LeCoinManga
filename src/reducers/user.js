@@ -8,10 +8,15 @@ import {
   SET_EMAIL_OR_USERNAME,
   SET_LOGIN_PASSWORD,
   LOGOUT_USER,
+  SET_LOGIN_ERROR,
 } from "../actions/user";
 
 export const initialState = {
   user: {},
+  loginError: {
+    isEmailInvalid: false,
+    isPasswordInvalid: false,
+  },
   isSuccessfullyRegistered: false,
   isSuccessfullyLoggedIn: false,
   registerUsername: "",
@@ -72,6 +77,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         loginPassword: action.payload,
+      };
+    case SET_LOGIN_ERROR:
+      return {
+        ...state,
+        loginError: action.payload,
       };
     default:
       return state;

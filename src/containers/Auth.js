@@ -22,6 +22,7 @@ const mapStateToProps = (state) => ({
   registerEmail: state.user.registerEmail,
   emailOrUsername: state.user.emailOrUsername,
   loginPassword: state.user.loginPassword,
+  loginError: state.user.loginError,
 });
 
 const mapDispatchToProps = (dispatch) => ({
