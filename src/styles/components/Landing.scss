@@ -168,7 +168,7 @@
             left: 50%;
             transform: translateX(-50%);
             color: $blue;
-            font-size: $text-xs / 1.2;
+            font-size: calc($text-xs / 1.2);
             background-color: #f8f8ff80;
             padding: 8px;
             border-radius: 10px;

@@ -1,5 +1,5 @@
 button {
-    border: none;
+  border: none;
 }
 
 .button {
@@ -54,6 +54,23 @@ button {
       background-color: $white;
       border: 1px solid $blue;
       color: $blue;
+    }
+  }
+
+  &.dark-blue {
+    background-color: $dark-blue;
+    color: $white;
+
+    &:hover,
+    &:active {
+      box-shadow: 0 10px 20px -10px rgba($dark-blue, 1);
+      transform: translate(0, -3px);
+    }
+
+    &.outlined {
+      background-color: $white;
+      border: 1px solid $dark-blue;
+      color: $dark-blue;
     }
   }
 }

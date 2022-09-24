@@ -15,10 +15,10 @@ export default function Landing({ getAllGenres, genres }) {
     <div className="Landing">
       <div className="Landing__introduction">
         <h2 className="Landing__introduction__title">
-          Acheter et Vendez vos mangas entre passionnés
+          Achetez et Vendez vos mangas entre passionnés
         </h2>
         <div className="Landing__introduction__post">
-          <button className="button">
+          <button className="button dark-blue">
             <Link to='/form'>
               Déposer une annonce
             </Link>
