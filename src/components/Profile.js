@@ -3,8 +3,9 @@
 export default function Profile({ user }) {
   const { data } = user;
   const { user: userData } = data;
-  console.log(userData);
-  const { username, avatar_url: avatarUrl, bio, email, firstname, lastname, phone } = userData;
+  // const { username, avatar_url: avatarUrl, bio, email, firstname, lastname, phone } = userData;
+  // TODO: Finish this component
+  const { username, email } = userData;
 
     return (
         <div className="Profile">

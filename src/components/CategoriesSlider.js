@@ -42,7 +42,7 @@ export default function CategoriesSlider({ categories }) {
         {categories.map((category, index) => (
           <li key={index} className="Landing__categories__list__item">
             <Link
-              to={`/category/${category.label}`}
+              to={`/category/${category.id}`}
               className="Landing__categories__list__item__link">
               <img
                 src={`../images/categories/${category.label}.png`}

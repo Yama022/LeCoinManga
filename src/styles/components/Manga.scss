@@ -1,0 +1,80 @@
+.Manga {
+  width: 100%;
+  margin: auto;
+  padding: $gutter;
+  display: flex;
+  flex-direction: column;
+  gap: calc($gutter / 2);
+  justify-content: center;
+
+  &__title {
+    font-size: $text-l;
+    font-weight: $black;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: $text-xs;
+    font-style: italic;
+    text-align: center;
+  }
+
+  &__results {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $gutter;
+
+    &__item {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: calc($gutter / 2);
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        transform: scale(1.05);
+
+        .Manga__results__item__picture {
+          transform: scale(1.1);
+        }
+      }
+
+      &__title {
+        font-size: $text-s;
+        font-weight: $black;
+        text-align: center;
+        color: $blue;
+        width: 100%;
+        padding: calc($gutter / 2);
+        min-height: calc($gutter * 3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        position: absolute;
+        bottom: 0;
+        background-color: #f8f8ff80;
+        z-index: 1;
+        font-family: sans-serif !important;
+      }
+
+      &__picture {
+        width: calc($gutter * 8);
+        height: calc($gutter * 12);
+        object-fit: cover;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}

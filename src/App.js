@@ -7,6 +7,7 @@ import Form from "./containers/Form";
 import Profile from "./containers/Profile";
 import Cart from "./components/Cart";
 import Favorites from "./components/Favorites";
+import Manga from "./containers/Manga";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/category/:id" element={<Manga />} />
       </Routes>
     </div>
   );
