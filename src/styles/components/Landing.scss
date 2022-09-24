@@ -37,12 +37,94 @@
   &__categories {
     display: flex;
     flex-direction: column;
-    gap: $gutter;
 
     &__list {
       display: flex;
       justify-content: space-between;
       width: 100%;
+
+      .slick-list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        padding: calc($gutter * 2) 0;
+      }
+
+      .slick-slider {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: $gutter;
+
+        .slick-arrow {
+          color: transparent;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: $secondary;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: #0c3d9120;
+          }
+        }
+
+        .slick-prev, .slick-next {
+          position: relative;
+          &:before {
+            content: "<";
+            position: absolute; // center the text
+            color: $white;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .slick-next {
+          &:before {
+            content: ">";
+          }
+        }
+      }
+
+      .slick-track {
+        display: flex;
+        margin-left: 1.5rem;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .slick-dots {
+        position: absolute;
+        display: flex !important;
+        gap: $gutter;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        li {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $secondary;
+          button {
+            background-color: transparent;
+            color: transparent;
+          }
+        }
+
+        .slick-active {
+          background-color: $primary;
+          border: 2px solid $blue;
+        }
+
+        
+      }
 
       &__item {
         display: flex;
@@ -56,12 +138,13 @@
         transition: all 0.3s ease-in-out;
 
         &:hover {
-            transform: translateY(-5px);
+          transform: translateY(-5px);
 
-            img {
-                transform: scale(1.1);
-                filter: brightness(1) blur(0);
-            }
+          img {
+            transform: scale(1.1);
+            border: 2px solid $blue;
+            filter: brightness(1) blur(0);
+          }
         }
 
         &__link {
@@ -75,18 +158,19 @@
             object-fit: cover;
             border-radius: 18px;
             filter: brightness(0.8) blur(2px);
-            transition: all 0.3s ease-in-out;
+            transition: transform 0.25s ease-in-out;
           }
 
           span {
             position: absolute;
+            width: 80%;
             bottom: 5px;
             left: 50%;
             transform: translateX(-50%);
             color: $blue;
-            font-size: $text-xs;
-            background-color: #f8f8ff30;
-            padding: 10px;
+            font-size: $text-xs / 1.2;
+            background-color: #f8f8ff80;
+            padding: 8px;
             border-radius: 10px;
             text-align: center;
           }
