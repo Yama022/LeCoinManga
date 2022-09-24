@@ -2,14 +2,14 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import CategoriesSlider from "./CategoriesSlider";
 
-export default function Landing({ getAllTypes, types }) {
+export default function Landing({ getAllGenres, genres }) {
   useEffect(() => {
-    getAllTypes();
-  }, [getAllTypes]);
+    getAllGenres();
+  }, [getAllGenres]);
 
 
   // Hide NSFW categories from the landing page if the user is not logged in
-  const categories = types.filter((category) => !category.is_nsfw);
+  const categories = genres.filter((category) => !category.is_nsfw);
 
   return (
     <div className="Landing">

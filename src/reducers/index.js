@@ -4,7 +4,7 @@ import genreReducer from "./genre";
 import userReducer from "./user";
 
 const rootReducer = combineReducers({
-  type: genreReducer,
+  genre: genreReducer,
   user: userReducer,
 });
 

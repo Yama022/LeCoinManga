@@ -1,7 +1,7 @@
 
+export default function Form({ isLoggin, genres }) {
+  // console.log(genres)
 
-export default function Form({ isLoggin }) {
-  console.log(isLoggin);
   return (
     <div className="Form">
 
@@ -10,16 +10,6 @@ export default function Form({ isLoggin }) {
         <form action="get">
           <div className="Form__container__form">
             <h1>Déposer une annonce</h1>
-          </div>
-
-          <div className="Form__container__type">
-            <label htmlFor="type">Type</label>
-            <select name="type" id="type">
-              <option value="manga">Manga</option>
-              <option value="anime">Anime</option>
-              <option value="manga">Manga</option>
-              <option value="anime">Anime</option>
-              </select>
           </div>
 
           <div className="Form__container__title">

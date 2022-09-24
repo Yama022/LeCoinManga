@@ -1,11 +1,11 @@
 import { SET_GENRES } from '../actions/genre';
 
 export const initialState = {
-    genre: [],
+    genres: [],
 }
 
 const reducer = (state = initialState, action) => {
-    switch (action.genre) {
+    switch (action.type) {
         case SET_GENRES:
             return {
                 ...state,

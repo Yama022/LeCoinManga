@@ -1,4 +1,4 @@
-import hand from '../assets/images/hand.gif';
+// import hand from '../assets/images/hand.gif';
 
 export default function Profile({ user }) {
   const { data } = user;
@@ -11,7 +11,7 @@ export default function Profile({ user }) {
           <div className="Profile__container">
             <h1 className="Profile__container__username">
               <span>Hello
-                <img src={hand} alt="hand" />
+                {/* <img src={hand} alt="hand" /> */}
               </span> 
               {username}</h1>
             <span>mail : {email}</span>

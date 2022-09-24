@@ -45,7 +45,11 @@ export default function CategoriesSlider({ categories }) {
               to={`/category/${category.label}`}
               className="Landing__categories__list__item__link">
               <img
-                src={require(`../assets/images/categories/${category.label}.png`)}
+                src={`../images/categories/${category.label}.png`}
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = "../images/categories/default.png";
+                }}
                 alt={category.name}
               />
               <span>{category.name}</span>
