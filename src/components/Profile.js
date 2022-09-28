@@ -12,8 +12,9 @@ export default function Profile({ user, announcement }) {
         <div className="Profile">
           <div className="Profile__container">
             <h1 className="Profile__container__username">
-              <p>Hello</p> 
+              <p>Hello
               <img src="../images/hand.gif" alt="hand" />
+              </p> 
               {username}
             </h1>
 
