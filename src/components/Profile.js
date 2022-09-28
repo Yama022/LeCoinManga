@@ -1,19 +1,22 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Profile({ user, announcement }) {
-  console.log(announcement)
   const { data } = user;
   const { user: userData } = data;
   // const { username, avatar_url: avatarUrl, bio, email, firstname, lastname, phone } = userData;
   // TODO: Finish this component
   const { username } = userData;
 
+  useEffect(() => {
+  }, [announcement])
+
     return (
         <div className="Profile">
           <div className="Profile__container">
             <h1 className="Profile__container__username">
               <p>Hello
-              <img src="../images/hand.gif" alt="hand" />
+                <img src="../images/hand.gif" alt="hand" />
               </p> 
               {username}
             </h1>
