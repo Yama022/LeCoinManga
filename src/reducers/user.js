@@ -25,6 +25,8 @@ export const initialState = {
   registerEmail: "",
   emailOrUsername: "",
   loginPassword: "",
+  announcement: [],
+  announcementIsPublished: false,
 };
 
 const reducer = (state = initialState, action) => {
